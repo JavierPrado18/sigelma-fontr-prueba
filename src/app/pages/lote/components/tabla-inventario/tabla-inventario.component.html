@@ -1,0 +1,35 @@
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.id }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="producto">
+      <mat-header-cell *matHeaderCellDef> Producto </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.producto }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="categoria">
+      <mat-header-cell *matHeaderCellDef> Categoria </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.categoria }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="marca">
+      <mat-header-cell *matHeaderCellDef> Marca </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.marca }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="proveedor">
+      <mat-header-cell *matHeaderCellDef> Proveedor </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.proveedor }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="actividad">
+      <mat-header-cell *matHeaderCellDef> Actividad </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.actividad }} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>

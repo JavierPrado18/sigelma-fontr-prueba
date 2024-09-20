@@ -1,0 +1,46 @@
+<mat-card appearance="outlined"  style="width: 400px; margin: auto;">
+    <mat-card-header >
+        <mat-card-title>Agregar Producto</mat-card-title>
+      </mat-card-header>
+    <mat-card-content>
+        <br>
+        <p>
+            <mat-form-field appearance="outline" style="width: 100%;">
+              <mat-label>Nombre</mat-label>
+              <input matInput placeholder="Placeholder">
+              <mat-icon matSuffix>add</mat-icon>
+              
+            </mat-form-field>
+          </p>
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Descripcion</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>  
+
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>Precio</mat-label>
+            <input matInput type="number" class="example-right-align" placeholder="0" />
+            <span matTextPrefix>$&nbsp;</span>
+            <span matTextSuffix>.00</span>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label  >Stock Maximo</mat-label>
+            <input type="number" matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" style="width: 100%;"> 
+            <mat-label >Stock minimo</mat-label>
+            <input type="number" matInput>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label  >Stock Actual</mat-label>
+            <input type="number" matInput>
+          </mat-form-field>
+        
+    </mat-card-content>
+    <mat-card-footer style="padding: 12px;">
+        <button mat-flat-button style="width: 100%;">Agregar</button>       
+      </mat-card-footer>
+  </mat-card>

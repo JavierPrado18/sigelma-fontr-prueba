@@ -1,0 +1,26 @@
+<mat-card appearance="outlined"  style="width: 400px; margin: auto;">
+    <mat-card-header >
+        <mat-card-title>Agregar {{formTitle}}</mat-card-title>
+      </mat-card-header>
+    <mat-card-content>
+        <br>
+        <!-- fromulario -->
+        <mat-form-field style="width: 100%;" class="example-form-field" appearance="outline" >
+            
+            <mat-label>Descricion</mat-label>
+            <input matInput type="text" [(ngModel)]="initialValue">
+            @if (initialValue) {
+              <button matSuffix mat-icon-button aria-label="Clear" (click)="initialValue=''">
+                <mat-icon>close</mat-icon>
+              </button>
+            }
+          </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-footer class="example-card-footer">
+        
+        <mat-chip-set aria-label="Agragar Actividad">
+            <mat-chip >Agregar</mat-chip>
+          </mat-chip-set>
+      </mat-card-footer>
+  </mat-card>

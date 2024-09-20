@@ -1,0 +1,16 @@
+.example-container {
+
+    width: auto;
+    height: 100vh;
+    border: 1px solid #555;
+  }
+  .sidebar{
+    background: #003061;
+    color: aliceblue;
+    width: 300px;
+  }
+ 
+  .main-content div:first-child {
+
+    width: 90%;
+  }

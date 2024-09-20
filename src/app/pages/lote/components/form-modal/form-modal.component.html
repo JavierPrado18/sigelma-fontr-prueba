@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Agregar Producto</h2>
+<mat-dialog-content style="width: 500px;">
+    <br>
+    <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Producto</mat-label>
+        <input matInput placeholder="Ingrese el producto">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Marca</mat-label>
+        <mat-select>
+          <mat-option value="one">Marca 1</mat-option>
+          <mat-option value="two">Marca 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="form-input" appearance="outline">
+        <mat-label>Actividad</mat-label>
+        <textarea matInput placeholder="Ingrese la actividad"></textarea>
+      </mat-form-field>
+      
+</mat-dialog-content>
+<mat-dialog-actions>
+
+<button mat-flat-button mat-dialog-close  >Aceptar</button>
+<button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
